@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>message talking</title>
+  </head>
+  <body>
+    <ul id="ergaa" type="none"></ul>
+    <input type="text" id="message" placeholder="" />
+    <button id="send">submit</button>
+
+    <script>
+      const ergaa = document.getElementById("ergaa");
+      const erga = document.getElementById("message");
+      const sen = document.getElementById("send");
+
+      sen.addEventListener("click", function () {
+        const new_mes = document.createElement("li");
+        new_mes.innerHTML = erga.value;
+        ergaa.appendChild(new_mes);
+        erga.value = "";
+      });
+    </script>
+  </body>
+</html>

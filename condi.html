@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IF statment</title>
+  </head>
+  <body>
+    <script>
+      function filadhu(jalq, lames, sadesso) {
+        if (jalq >= lames && jalq >= sadesso) {
+          return jalq;
+        } else if (lames >= jalq && lames >= sadesso) {
+          return lames;
+        } else {
+          return sadesso;
+        }
+      }
+      document.write(filadhu(7, 40, 9));
+    </script>
+  </body>
+</html>
