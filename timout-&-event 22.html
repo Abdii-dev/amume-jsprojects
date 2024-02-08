@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>to setimeout</title>
+</head>
+<body>
+  <section><button onclick="setTimeout(jirtaa, 1000)">JIRTAA</button></section>
+
+  <div class="handler" style="margin-left: 800px">
+    <button id="btn" onclick="btnhandler(this)">click me</button>
+    </div>
+
+  <hr>
+  <div>
+    <img src="jhn.JPG" id="image" width="300px" alt="photo johoni">
+  </div>
+
+  <script>
+
+
+
+function jirtaa() {
+  alert("Jirraa Galata Rabbii");
+}
+
+  function btnhandler(element) {
+element.innerHTML="clicked me";
+element.style = "background-color: Red;"
+  //alert("na Cuqaafteta!");
+}
+
+
+    var image = document.getElementById('image');
+
+image.addEventListener("mouseover", function() {
+  this.style="box-shadow: 13px 40px 22px red";
+  this.width="400";
+})
+
+image.addEventListener("mouseout",function() {
+  this.style="";
+  this.width="450";
+})
+  </script>
+</body>
+</html>
